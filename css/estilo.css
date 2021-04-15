@@ -16,6 +16,7 @@ header{
     position:fixed;
     z-index: 99;
     width: 100%;
+    
 }
 
 .container{
@@ -23,8 +24,6 @@ header{
     width: 1200px;
     margin: 0 auto;
     /* background-color: yellow; */
-
- 
     
 }
 
@@ -34,7 +33,7 @@ header{
     align-items: center;
 
 }
-.container_header a{
+.box_nav a{
     text-decoration:none;
     color:white;
     font-family: 'Bebas Neue', cursive;
@@ -49,6 +48,14 @@ header{
     width: 600px;
     display:flex;
     justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+}
+
+.btn_menu i{
+
+    display: none;
 }
 
 /* MAIN */
@@ -63,9 +70,7 @@ main{
     position:relative;
     height: 730px;
     width: 1349px;
-    top: 0;
     margin:0 auto;
-    padding: 0;
     display: flex;
     align-items: center;
     
@@ -151,7 +156,6 @@ hr{
     width: 100%;
     height: 800px; 
     
-    
 }
 
 .container_section h2{
@@ -175,7 +179,6 @@ hr{
     height: 476px;
     padding-top: 140px;
     
-
 }
 
 .section_sobre_textos span{
@@ -186,7 +189,6 @@ hr{
     font-style: normal;
     text-transform: uppercase;
     color: white;
-    
     
 }
 
@@ -336,7 +338,6 @@ hr{
 
 footer{
     
-    width:1440px;
     height:82px;
     margin: 0 auto;
     display: flex;
@@ -364,3 +365,235 @@ footer{
     font-style: normal;
     
 }
+
+
+@media(max-width:420px){
+
+    .container{
+        width: 80vw;
+
+    }
+
+    .container_header{
+
+        justify-content:flex-start;
+    }
+      
+    .box_nav{
+
+        display: none;
+        background: black;
+        flex-direction: column;
+        height: 300px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        justify-content: space-evenly;
+
+        
+    }
+
+    .btn_menu i{
+
+        display: inline-block;
+       
+    }
+    
+    .btn_menu i{
+
+        color: white;   
+        font-size: 30px
+    }
+    
+
+    .section_banner{
+        width:420px;
+        height: 622px;
+       
+    }
+
+    .container_banner{
+
+        right:unset;
+        left:9%;
+        top: 176px;
+        bottom: unset;
+        width: 340px;
+        display:flex;
+        align-items: center;
+        
+    }
+
+    .banner{
+        width: 420px;
+        object-fit: cover;
+        display: flex;
+        height: 100%;
+    }
+
+    .container_banner h1{
+
+        font-size: 60px;
+        height: 147px;
+        width: 340px;
+        margin: 25px 0;
+    
+
+    }
+
+    hr{
+        width:340px;
+    }
+
+    .container_banner span{
+
+        font-size: 33px;
+        width: 340px;
+        margin: 25px 0;
+    }
+
+    .imagem_mouse{
+
+        height: 130px;
+        width: 42px;
+    }
+
+    /* section sobre */
+    
+    .container_sobre{
+
+        width: 80vw;
+        height: auto;
+    }
+
+    .box_sobre{
+
+        height:auto;
+        flex-direction: column;
+    }
+
+    .container-section{
+
+        width: 80vw;
+    }
+    
+    .container_section h2{
+
+        font-size: 57px;
+        padding-bottom: 60px;
+        width: 342px;
+        margin-top: 20px;
+    }
+    
+    .container_section img{
+        
+        width: 80vw;
+    }
+    
+    .section_sobre_textos{
+
+        padding-top: 50px;
+        left: 9%;
+        width: 80vw;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .section_sobre_textos h3{
+
+        font-size: 37px;
+
+    }
+
+
+    .section_sobre_textos p{
+
+        font-size: 19px;
+        width: 349px;
+        text-align: justify;
+        height:auto;
+    }
+
+    /* informações */
+
+    .container_info{
+
+        display: flex;
+        width: 420px;
+        height: auto;
+        height: 584px
+
+    }
+
+    .box_info{
+
+        flex-direction:column;
+        height: auto;
+        height: 100%;
+        justify-content: space-evenly;
+
+    }
+
+    .box-info div{
+
+    width:334px;
+
+    }
+
+    .informacoes{
+
+        width: 339px;
+    }
+
+    /* Mapa */
+
+    .container_mapa{
+        
+        height: 800px;
+        width: 420px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container_mapa h2{
+
+        width: unset;
+    }
+
+    .box_mapa{
+
+        width: 80vw;
+        height: auto;
+        padding: 60px 15px;
+
+    }
+
+    .box_mapa span{
+
+        margin-left:unset;
+        height: unset;
+        font-size: 28px;
+        margin: unset;
+        
+
+    }
+
+    .mapa{
+
+        position:unset;
+        width: 80vw;
+        margin-bottom: 50px;
+        
+    }
+
+    /* footer */
+
+    .container_footer span{
+
+        width: 80vw;
+        text-align: center;
+    }
+}
+
